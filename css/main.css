@@ -1,0 +1,37 @@
+@font-face { font-family: 'ThinkingOfBetty'; src: url(../fonts/Thinking_of_Betty.ttf);}
+@font-face { font-family: 'CenturyGothic'; src: url(../fonts/ufonts.com_century-gothic.ttf);}
+
+body {width: 100%;height: 100vh;background-color: #c63b66;}
+.full {position: relative;width: 1024px;height: 100vh;margin: 0 auto;}
+.logo {position: absolute;left: 0px;top: 0;}
+.gift {position: absolute;right: 0;top: 93px;z-index: 2;}
+.head {position: absolute;font-size: 25px;font-family: 'CenturyGothic';color: white;left: 121px;top: 250px;margin: 0;padding: 0;z-index: 2;}
+.head2 {position: absolute;font-size: 110px;font-family: 'ThinkingOfBetty';color: white;left: 0;top: 258px;margin: 0;padding: 0;z-index: 2;}
+.footer {position: absolute;bottom: 0;width: 100%;height: 20vh;background-color: #d26285;z-index: 1;}
+
+@media only screen and  (max-width: 1024px){
+	.full {width: 900px;}
+}
+@media only screen and  (max-width: 900px){
+	.full {width: 750px;}
+	.gift {width: 380px;height: 433px;}
+	.logo {width: 180px;height: 124px;}
+	.head {font-size: 20px;}
+	.head2 {font-size: 90px;}
+}
+@media only screen and  (max-width: 750px){
+	.full {width: 600px;}
+	.gift {width: 254px;height: 291px;top: 44px;}
+	.logo {width: 121px;height: 84px;}
+	.head {font-size: 13px;top: 135px;left: 80px;}
+	.head2 {font-size: 60px;top: 140px;}
+	.footer {height: 30vh;}
+}
+@media only screen and  (max-width: 600px){
+	.full {width: 300px;}
+	.gift {width: 127px;height: 146px;top: 44px;}
+	.logo {width: 121px;height: 84px;left: auto;margin: 0 auto;}
+	.head {font-size: 11px;top: 135px;left: 49px;}
+	.head2 {font-size: 48px;top: 140px;}
+	.footer {height: 30vh;}
+}
